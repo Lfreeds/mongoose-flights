@@ -1,0 +1,107 @@
+* {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+    "nav"
+    "main";
+}
+
+body > nav {
+  grid-area: nav;
+  background-color: #6a1a21;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
+}
+
+nav > img {
+  width: 60px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+div1 {
+  grid-column: 1 / 3;
+}
+
+ul {
+  grid-column: 1 / 3;
+}
+
+body > main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e8eceb;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+nav > a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+table {
+  font-size: 24px;
+}
+
+table thead th {
+  padding: 10px;
+}
+
+#new-form #add-destination {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 22rem));
+}
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  width: 10rem;
+  margin: auto;
+}
+
+#add-destination {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+#add-destination input[type="submit"] {
+  width: 8 rem;
+  grid-column: 2 /3;
+  margin-bottom: 2rem;
+}
+
+#show-page {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+  font-size: 20px;
+}
+
+a:link,
+a:visited {
+  color: yellow;
+  background-color: #6a1a21;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Mongoose Flights</title>
+  </head>
+  <body>
+    <nav>
+      <img src="/images/airplane.svg" alt="" />
+      <a href="/flights" <%- title === "All Flights" ? 'class="active"' : '' %>>ALL FLIGHTS</a>
+      <a href="/flights/new" <%- title === "Add Flight" ? 'class="active"' : '' %>>ADD FLIGHT</a>
+    </nav>
+   <main>
+      <h1><%= title %></h1>
+        
